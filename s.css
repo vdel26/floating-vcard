@@ -72,12 +72,17 @@ body {
 /*FRONT CARD STYLES*/
 .front-card-content {
     text-align: center;
+    color: #353535;
+}
+.name {
+    font-size: 22px;
+    font-weight: 700;
 }
 .flip-container .flip-button {
     display: block;
     position: absolute;
     top: 150px;
-    left: 33%;
+    left: 77px;
     -webkit-appearance: push-button;
     box-shadow: 0;
     /* Rectangle 2: */
@@ -115,8 +120,33 @@ body {
 }
 
 /*BACK CARD STYLES*/
-.back-card-content {
-    text-align: center;
+.back-card-content > a {
+    text-decoration: none;
+    margin-left: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    display: block;
+}
+.back-card-content span {
+    margin-left: 5px;
+    position: relative;
+    top: 4px;
+    color: #4F4F4F;
+}
+.icon {
+    height: 31px;
+    width: 31px;
+    vertical-align: middle;
+}
+.icon-path {
+    stroke: none;
+    fill: #4F4F4F;
+}
+.back-card-content > a:hover .icon-path {
+    fill: #282828;
+}
+.back-card-content > a:hover span {
+    color: #282828;
 }
 .back-button {
     cursor: pointer;
